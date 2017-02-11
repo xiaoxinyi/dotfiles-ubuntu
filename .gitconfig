@@ -1,0 +1,7 @@
+[user]
+	email = xiaoxin88214@163.com
+	name = ZhangLi
+[push]
+	default = simple
+[core]
+	editor = emacs

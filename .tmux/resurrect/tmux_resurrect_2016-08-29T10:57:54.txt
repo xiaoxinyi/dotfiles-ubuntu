@@ -1,0 +1,17 @@
+pane	DL	0	:~	1	:*	0	:/home/sxwl1080/zhangli	0	sudo	:sudo nvidia-docker run -it -p 6011:6006 -p 8801:8888 -v /home/sxwl1080/zhangli/dl-data/:/root/dl-data --name zl_caffe_gpu xiaoxinyi/caffe-gpu:8.23 zsh
+pane	DL	0	:~	1	:*	1	:/home/sxwl1080/zhangli	0	sudo	:sudo docker exec -it zl_caffe_gpu zsh
+pane	DL	0	:~	1	:*	2	:/home/sxwl1080/zhangli	0	sudo	:sudo docker exec -it zl_caffe_gpu zsh
+pane	DL	0	:~	1	:*	3	:/home/sxwl1080/zhangli	0	sudo	:sudo docker exec -it zl_caffe_gpu zsh
+pane	DL	0	:~	1	:*	4	:/home/sxwl1080	1	zsh	:
+pane	DL	1	:docker	0	:-	0	:/home/sxwl1080/zhangli	1	sudo	:sudo docker exec -it zl_caffe_gpu zsh
+pane	DL	1	:docker	0	:-	1	:/home/sxwl1080/zhangli	0	sudo	:sudo docker exec -it zl_caffe_gpu zsh
+pane	zl	0	:.	1	:*	0	:/home/sxwl1080/zhangli/New_KRL_BI/KRL_TransR_BI	0	./train	:./train -version 0 -lang_version fr -train_mapNum 22000
+pane	zl	0	:.	1	:*	1	:/home/sxwl1080/zhangli/New_KRL_BI/KRL_TransR_BI	0	./train	:./train -version 0 -lang_version de -train_mapNum 20000
+pane	zl	0	:.	1	:*	2	:/home/sxwl1080/anaconda2/bin (deleted)	1	zsh	:emacs .zshrc
+su
+pane	zl	1	:..angli/dl-data	0	:-	0	:/home/sxwl1080/zhangli/dl-data	1	zsh	:
+window	DL	0	1	:*	0d22,210x47,0,0{107x47,0,0[107x22,0,0,5,107x24,0,23,9],102x47,108,0[102x24,108,0{48x24,108,0,6,53x24,157,0,8},102x22,108,25,7]}
+window	DL	1	0	:-	62f9,233x48,0,0{117x48,0,0,10,115x48,118,0,11}
+window	zl	0	1	:*	8e1b,233x48,0,0{102x48,0,0[102x19,0,0,0,102x28,0,20,3],130x48,103,0,2}
+window	zl	1	0	:-	c6e1,210x47,0,0,4
+state	DL	
