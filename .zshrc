@@ -99,6 +99,7 @@ alias ndcud='nvidia-docker-compose up -d'
 alias deit='docker exec -i -t'
 alias dc='docker-compose'
 alias dcud='docker-compose up -d'
+alias dm='docker-machine'
 
 deitz() {
     docker exec -i -t $1 zsh
@@ -157,8 +158,8 @@ export VPN_PASSWORD='kjkjkj'
 # mount nas
 function mount_nas() {
     echo -n Username:
-    read username
-#    echo -e "$username"
+    read -s username
+    echo -e "$username"
     echo -n Password:
     read -s password
     sudo mount -t cifs //192.168.199.31/技术部/算法组/数据集/ /home/sxwl1080/sxwl-dataset/nas -o username=$username,password=$password
