@@ -49,7 +49,7 @@ ZSH_THEME="fino"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump sublime common-aliases themes tmux history docker)
+plugins=(git autojump sublime common-aliases themes tmux history docker zsh-syntax-highlighting)
 
 # User configuration
 
@@ -158,7 +158,7 @@ export VPN_PASSWORD='kjkjkj'
 # mount nas
 function mount_nas() {
     echo -n Username:
-    read -s username
+    read username
     echo -e "$username"
     echo -n Password:
     read -s password
