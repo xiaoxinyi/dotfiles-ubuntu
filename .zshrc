@@ -49,7 +49,7 @@ ZSH_THEME="fino"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump sublime common-aliases themes tmux history docker zsh-syntax-highlighting)
+plugins=(git autojump sublime common-aliases themes tmux history docker zsh-syntax-highlighting zsh-autosuggestions)
 
 # User configuration
 
@@ -100,6 +100,9 @@ alias deit='docker exec -i -t'
 alias dc='docker-compose'
 alias dcud='docker-compose up -d'
 alias dm='docker-machine'
+
+# git
+alias glma='git ls-files --modified| xargs git add'
 
 deitz() {
     docker exec -i -t $1 zsh
